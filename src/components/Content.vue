@@ -4,17 +4,20 @@
         <!-- Dynamic Components -->
         <button v-on:click="component = 'first_component'">First Component</button>
         <button v-on:click="component = 'second_component'">Second Component</button>
+        <ninjaBlog />
     </div>
 </template>
 <script>
 import firstComponent from "./firstComponent.vue"
 import secondComponent from "./secondComponent.vue"
+import ninjaBlog from "./ninjaBlog.vue"
 
 export default {
     name: 'ContentTemplate',
     components: {
         'first_component': firstComponent,
-        'second_component': secondComponent
+        'second_component': secondComponent,
+        ninjaBlog
     },
     data: function () {
         return {

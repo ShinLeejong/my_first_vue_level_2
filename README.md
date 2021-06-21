@@ -22,4 +22,8 @@ Svelte에서 간단하게 맛보기로 본 적이 있습니다. Svelte에서 Slo
 
 Component를 동적으로 상황에 맞게 출력할 수 있는 기법을 공부했습니다. (동적 컴포넌트)
 Register라는 기법이 이거에 맞는 건지 모르겠습니다.
+
+Data binding을 하는 방법을 구체적으로 학습했습니다.
+정확히, The Net Ninja Tutorial에 나오는 Input:Text, Checkbox, Select 별로
+어떻게 데이터 바인딩을 하는 지 구체적으로 익혔고, .lazy 에 대하여 알게 되었습니다.
 </pre>
