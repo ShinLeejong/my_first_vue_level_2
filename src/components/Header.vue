@@ -6,6 +6,7 @@
             <button v-on:click.prevent="take_a_bus('header')">
                 나는 헤더 버튼
             </button>
+            <slot name="additional_div"></slot>
         </h2>
     </header>
 </template>

@@ -6,28 +6,28 @@
 <script>
 export default {
     name: 'ContentTemplate',
-    beforeCreate() {
+    // beforeCreate() {
         
-    },
-    created() {
+    // },
+    // created() {
 
-    },
-    beforeMount() {
-        console.log("beforeMount fired")
-    },
-    mounted() {
-        // Useful for manipulating DOM
-        console.log("Mount fired")
-    },
-    beforeUpdate() {
-        console.log("Hot reloaded")
-    },
-    updated() {
+    // },
+    // beforeMount() {
+    //     console.log("beforeMount fired")
+    // },
+    // mounted() {
+    //     // Useful for manipulating DOM
+    //     console.log("Mount fired")
+    // },
+    // beforeUpdate() {
+    //     console.log("Hot reloaded")
+    // },
+    // updated() {
 
-    },
-    destroyed() {
+    // },
+    // destroyed() {
         
-    },
+    // },
 }
 </script>
 <style scoped>

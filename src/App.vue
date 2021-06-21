@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <Header />
+    <Header>
+      <div slot="additional_div">
+        <h3>{{paragraph}}</h3>
+      </div>
+    </Header>
     <Content />
     <Footer />
   </div>
@@ -15,8 +19,7 @@ export default {
   name: 'App',
   data: function () {
       return {
-        headerMessage: '신이종의 헤더',
-        footerMessage: '신이종의 푸터'
+        paragraph: "This is a paragraph from parent component!"
       }
     },
   components: {
