@@ -55,7 +55,6 @@ export default {
 <style scoped>
     #content {
         width: 100%;
-        height: 60vh;
         background: silver;
         overflow: auto;
     }

@@ -39,10 +39,10 @@ export default {
 
 <style scoped>
     .dropped_blog {
-        margin: 0 auto;
         max-width: 40vw;
         background: bisque;
         padding: .5rem;
+        margin: 0 auto 1rem;
     }
 
     .dropped_blog > article::first-letter {
@@ -51,6 +51,10 @@ export default {
 
     .dropped_blog > article {
         opacity: 0.
+    }
+
+    .dropped_blog:last-of-type {
+        margin: 0 auto 4rem;
     }
 
     #search > * {
