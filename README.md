@@ -6,7 +6,16 @@ Vue를 제대로 사용하기 위한 Vue만의 매력을 다루게 될 것이라
 ## 20210622
 <pre> vue-resource </pre> 를 사용하여 HTTP Request($http를 이용, POST & GET)를 학습하였고,
 서버는 JSONPlaceholder를 활용하여 학습하였습니다.
+<pre>
+// 지시어 커스터마이징, Customizing Directive
+Vue.directive("function name", {
+    bind(element, binding, vnode) {
 
+    }
+})
+</pre>
+에 대하여 공부하였습니다. 이건 정말 유용하게 쓸 수 있을 것 같습니다.
+React의 Custom Hook처럼 쓸 수도 있겠네요.
 
 ## 20210621
 <pre>
