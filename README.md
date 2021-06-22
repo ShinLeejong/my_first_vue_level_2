@@ -16,6 +16,20 @@ Vue.directive("function name", {
 </pre>
 에 대하여 공부하였습니다. 이건 정말 유용하게 쓸 수 있을 것 같습니다.
 React의 Custom Hook처럼 쓸 수도 있겠네요.
+<br />
+<pre>
+// Filter
+<h3 v-randomColor>{{post.title | uppercase}}</h3>
+</pre>
+<pre>
+// Global Registering, main.js
+Vue.filter("uppercase", (e) => e.toUpperCase());
+Vue.filter("slice", (e) =>
+  e.length > 100 ? e.slice(0, 100) + ", More..." : e
+);
+</pre>
+Global Registering에 대한 개념을 좀 더 명확히 익히게 되었고,
+filter에 대하여 공부하였습니다.
 
 ## 20210621
 <pre>

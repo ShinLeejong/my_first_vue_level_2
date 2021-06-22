@@ -2,8 +2,8 @@
     <div id="get_blog">
         <h2>불러온 포스팅</h2>
         <div v-for="post in posts" v-bind:key="post" class="dropped_blog">
-            <h3 v-randomColor>{{post.title}}</h3>
-            <article>{{post.body}}</article>
+            <h3 v-randomColor>{{post.title | uppercase}}</h3>
+            <article>{{post.body | slice}}</article>
         </div>
     </div>
 </template>
@@ -35,13 +35,12 @@ export default {
         padding: .5rem;
     }
 
-    .dropped_blog > h3:first-letter,
     .dropped_blog > article::first-letter {
         text-transform: uppercase;
     }
 
     .dropped_blog > article {
-        opacity: 0.9;
+        opacity: 0.
     }
 
 </style>

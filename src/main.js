@@ -3,7 +3,11 @@ import App from "./App.vue";
 import VueResource from "vue-resource";
 
 Vue.config.productionTip = false;
+
+// global registering <!--
+
 Vue.use(VueResource);
+
 Vue.directive("randomColor", {
   bind(e, binding, vnode) {
     e.style.color =
@@ -16,6 +20,13 @@ Vue.directive("randomColor", {
     }
   },
 });
+
+Vue.filter("uppercase", (e) => e.toUpperCase());
+Vue.filter("slice", (e) =>
+  e.length > 100 ? e.slice(0, 100) + ", More..." : e
+);
+
+// global registering -->
 
 export const someEventBus = new Vue();
 
