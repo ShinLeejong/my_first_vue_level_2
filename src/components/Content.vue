@@ -5,19 +5,22 @@
         <button v-on:click="component = 'first_component'">First Component</button>
         <button v-on:click="component = 'second_component'">Second Component</button>
         <ninjaBlog />
+        <getBlog />
     </div>
 </template>
 <script>
 import firstComponent from "./firstComponent.vue"
 import secondComponent from "./secondComponent.vue"
 import ninjaBlog from "./ninjaBlog.vue"
+import getBlog from "./getBlog.vue"
 
 export default {
     name: 'ContentTemplate',
     components: {
         'first_component': firstComponent,
         'second_component': secondComponent,
-        ninjaBlog
+        ninjaBlog,
+        getBlog
     },
     data: function () {
         return {
@@ -54,6 +57,7 @@ export default {
         width: 100%;
         height: 60vh;
         background: silver;
+        overflow: auto;
     }
 
     button {

@@ -47,4 +47,5 @@ export default {
 body {
   margin: unset;
 }
+
 </style>

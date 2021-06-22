@@ -22,6 +22,7 @@
                 <select v-model="blog.name">
                     <option v-for="name in names" v-bind:key="name">{{name}}</option>
                 </select>
+                <button id="submit" v-on:click.prevent="post">POST</button>
             </form>
         </div>
         <div id="blog_preview">
@@ -57,7 +58,23 @@ export default {
         }
     },
     methods: {
+        post: function() {
+            if(this.validator() === false) return;
+            this.$http.post("https://jsonplaceholder.typicode.com/posts", {
+                id: 1,
+                title: this.blog.title,
+                content: this.blog.content,
+                favorite: this.blog.favorite,
+                name: this.blog.name
+            }).then(data => {
+                console.log(data);
+                window.alert("Sumbitted successfully.");
+            }).catch(err => console.error(err));
+        },
 
+        validator: function() {
+            // validate the form contents with regexp
+        }
     },
 }
 </script>
@@ -101,6 +118,11 @@ export default {
 
     select {
         width: 4rem;
+    }
+
+    #submit {
+        display: block;
+        margin: 1.5rem auto 0;
     }
 
 </style>

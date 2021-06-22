@@ -3,6 +3,11 @@
 Vue의 아주 기초적인 부분을 넘어 기초와 중급 사이의 개념을 공부하는 레포지토리입니다.
 Vue를 제대로 사용하기 위한 Vue만의 매력을 다루게 될 것이라 생각되어, 굉장히 기대가 됩니다.
 
+## 20210622
+<pre> vue-resource </pre> 를 사용하여 HTTP Request($http를 이용, POST & GET)를 학습하였고,
+서버는 JSONPlaceholder를 활용하여 학습하였습니다.
+
+
 ## 20210621
 <pre>
 main에서부터 import하여 사용하는 이벤트 버스($emit, $on 활용)에 대하여 공부했습니다.
