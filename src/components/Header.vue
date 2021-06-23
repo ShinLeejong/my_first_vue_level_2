@@ -7,6 +7,25 @@
                 나는 헤더 버튼
             </button>
             <slot name="additional_div"></slot>
+            <nav>
+                <ul>
+                    <li>
+                        <router-link to="/" exact>
+                            Home
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link to="/blog" exact>
+                            Blog
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link to="/getBlog" exact>
+                            getBlog
+                        </router-link>
+                    </li>
+                </ul>
+            </nav>
         </h2>
     </header>
 </template>
@@ -40,11 +59,23 @@ export default {
         text-align: center;
         width: 100vw;
         height: 20vh;
-        background: green;
-        color: black;
+        background: cadetblue;
+        color: #000088;
     }
 
     h2 {
         margin: unset;
     }
+
+    nav {
+        position: relative;
+        height: 5vh;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0 3rem;
+        font-size: 1.25rem;
+    }
+
 </style>

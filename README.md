@@ -3,6 +3,16 @@
 Vue의 아주 기초적인 부분을 넘어 기초와 중급 사이의 개념을 공부하는 레포지토리입니다.
 Vue를 제대로 사용하기 위한 Vue만의 매력을 다루게 될 것이라 생각되어, 굉장히 기대가 됩니다.
 
+## 후기
+Vue 2를 마쳤으니 시간이 나면 Vue 3도 시도해 볼 생각입니다.
+진짜 확실히 React보다 속도가 빠르고, 생산성이 React보다
+좋다는 느낌은 들지만 그래도 React가 주는 다소 Solid한 느낌을
+무시할 순 없다는 생각이 들어서, 결국 뭐가 좋다 보다는
+Vue도 굉장히 매력적인 프레임워크라는 느낌을 받았습니다.
+
+## 시도해볼까 싶은 것들
+Vuex, Vue 3, Vue + TypeScript, Vue + AWS or Firebase
+
 ## 20210623
 <pre>
 Local Registering, 'computed' Method, Mixin
@@ -15,6 +25,11 @@ import VueRouter from 'vue-router'
 </pre>
 SPA의 꽃이라고 할 수 있는, Routing에 대하여 배웠습니다.
 Hash방식과 History 방식을 모두 익혔으나, Hash 방식을 유지해보았습니다.
+
+Route Parameter에 대하여 공부하였습니다(/blog/:id).
+
+Firebase course는 React와 몇 번 연동한 경험이 있어 생략합니다.
+Vue 2 Tutorial(The Net Ninja)를 마무리 지었습니다.
 
 ## 20210622
 <pre> vue-resource </pre> 를 사용하여 HTTP Request($http를 이용, POST & GET)를 학습하였고,

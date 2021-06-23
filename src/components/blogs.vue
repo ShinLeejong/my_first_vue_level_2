@@ -5,7 +5,9 @@
             <input type="text" id="search-text" v-model="search" placeholder="검색할 단어를 입력하세요" />
         </div>
         <div v-for="post in filteredPost" v-bind:key="post.title" class="dropped_blog">
-            <h3 v-randomColor>{{post.title | uppercase}}</h3>
+            <router-link v-bind:to="'/blog/' + post.id" exact>
+                <h3 v-randomColor>{{post.title | uppercase}}</h3>
+            </router-link>
         </div>
     </div>
 </template>

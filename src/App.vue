@@ -36,7 +36,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: black;
   /* default setting by Vue above */
 
   display: flex;
@@ -46,6 +46,11 @@ export default {
 
 body {
   margin: unset;
+}
+
+a {
+  color: bisque;
+  text-decoration: unset;
 }
 
 </style>

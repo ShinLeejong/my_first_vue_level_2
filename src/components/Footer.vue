@@ -35,15 +35,14 @@ export default {
 </script>
 <style scoped>
     footer {
+        display: flex;
         position: relative;
         text-align: center;
         width: 100vw;
         height: 20vh;
-        background: red;
-        color: black;
+        background: darkcyan;
+        color: honeydew;
+        flex-direction: column-reverse;
     }
 
-    h2 {
-        margin: unset;
-    }
 </style>
