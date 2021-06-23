@@ -8,19 +8,6 @@ Vue.config.productionTip = false;
 
 Vue.use(VueResource);
 
-Vue.directive("randomColor", {
-  bind(e, binding, vnode) {
-    e.style.color =
-      "#" +
-      Math.random()
-        .toString()
-        .slice(4, 7);
-    if (binding[0] in binding || vnode[0] in vnode) {
-      // nothing
-    }
-  },
-});
-
 Vue.filter("uppercase", (e) => e.toUpperCase());
 Vue.filter("slice", (e) =>
   e.length > 100 ? e.slice(0, 100) + ", More..." : e

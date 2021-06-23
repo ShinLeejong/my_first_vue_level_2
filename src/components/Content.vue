@@ -6,6 +6,7 @@
         <button v-on:click="component = 'second_component'">Second Component</button>
         <ninjaBlog />
         <getBlog />
+        <blogs />
     </div>
 </template>
 <script>
@@ -13,6 +14,7 @@ import firstComponent from "./firstComponent.vue"
 import secondComponent from "./secondComponent.vue"
 import ninjaBlog from "./ninjaBlog.vue"
 import getBlog from "./getBlog.vue"
+import blogs from './blogs.vue'
 
 export default {
     name: 'ContentTemplate',
@@ -20,7 +22,8 @@ export default {
         'first_component': firstComponent,
         'second_component': secondComponent,
         ninjaBlog,
-        getBlog
+        getBlog,
+        blogs
     },
     data: function () {
         return {
