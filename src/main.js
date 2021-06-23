@@ -1,12 +1,20 @@
 import Vue from "vue";
 import App from "./App.vue";
 import VueResource from "vue-resource";
+import VueRouter from 'vue-router';
+import Routes from './components/Router.js'
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = true;
 
 // global registering <!--
 
 Vue.use(VueResource);
+Vue.use(VueRouter);
+
+const router = new VueRouter({
+  routes: Routes,
+  mode: 'hash' // mode: 'history'로 설정 시 history mode
+});
 
 Vue.filter("uppercase", (e) => e.toUpperCase());
 Vue.filter("slice", (e) =>
@@ -19,4 +27,5 @@ export const someEventBus = new Vue();
 
 new Vue({
   render: (h) => h(App),
-}).$mount("#app");
+  router
+}).$mount("#app")

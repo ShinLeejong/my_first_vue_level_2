@@ -10,6 +10,12 @@ Local Registering, 'computed' Method, Mixin
 Registering을 Global하게가 아닌 Local하게 하는 법과,
 computed 메소드, 그리고 Mixin에 대해 익혔습니다.
 
+<pre>
+import VueRouter from 'vue-router'
+</pre>
+SPA의 꽃이라고 할 수 있는, Routing에 대하여 배웠습니다.
+Hash방식과 History 방식을 모두 익혔으나, Hash 방식을 유지해보았습니다.
+
 ## 20210622
 <pre> vue-resource </pre> 를 사용하여 HTTP Request($http를 이용, POST & GET)를 학습하였고,
 서버는 JSONPlaceholder를 활용하여 학습하였습니다.
